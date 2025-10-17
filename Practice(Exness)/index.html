@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140">
+      <path
+        d="M 44.65 33.992 L 95.35 33.992 L 95.35 59.341 L 70 59.341 Z M 44.65 59.341 L 70 59.341 L 95.35 84.691 L 44.65 84.691 Z M 44.65 84.691 L 70 84.691 L 70 110.041 Z"
+        fill="rgb(0, 0, 0)"
+      ></path>
+    </svg> -->
+    <header class="header">
+      <img src="exnesslogo.svg" class="logo" alt="logo" />
+      <div class="resp">
+        <div class="toggle">
+          <div class="toggle-left">
+            <img src="logo_small.svg" alt="" class="logo-small" />
+          </div>
+          <div class="toggle-right">
+            <a href="">Sign in</a>
+            <button><i class="fa-solid fa-bars " onclick="showMenu()" id="show"></i></button>
+            <button><i class="fa-solid fa-x close" onclick="hideMenu()" id="close"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-items" id="nav">
+        <div class="header-left">
+          <nav>
+            <a href="">Trading</a>
+            <a href="">Markets</a>
+            <a href="">Platforms</a>
+            <a href="">Resources</a>
+            <a href="">Company</a>
+            <a href="">Partners</a>
+          </nav>
+        </div>
+        <div class="header-right">
+          <a href="" class="btn-yellow"> Register</a>
+          <a href="" class="btn-white">Sign in</a>
+          <i class="fa-solid fa-globe"></i><span>EN</span>
+        </div>
+      </div>
+    </header>
+    <div class="fixed-support">
+      <i class="fa-solid fa-message"></i>
+    </div>
+    <!-- hero section -->
+    <div class="hero">
+      <div class="bg-vid">
+        <video src="exnessvideo.webm" autoplay muted loop></video>
+      </div>
+      <div class="hero-layer">
+        <h1>Upgrade the way <br />you trade</h1>
+        <p>
+          Trade with the world’s largest retail broker and benefit from <br />
+          better-than-market conditions.
+        </p>
+        <div class="hero-btn">
+          <a href="" class="btn-yellow">Register</a>
+          <a href="" class="btn-white">Try free demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <div class="hero-cta-item">
+        <i class="fa-solid fa-users"></i>
+        <p>1 million+ active traders</p>
+      </div>
+      <div class="hero-cta-item">
+        <i class="fa-solid fa-scroll"></i>
+        <p>Multiple regulatory licenses</p>
+      </div>
+      <div class="hero-cta-item">
+        <i class="fa-solid fa-headset"></i>
+        <p>24/7 customer support</p>
+      </div>
+      <div class="hero-cta-item">
+        <i class="fa-solid fa-award"></i>
+        <p>PCI DSS certified</p>
+      </div>
+    </div>
+    <!-- features section -->
+    <section class="features">
+      <div class="features-title">
+        <h1>
+          Thrive in the gold, oil, indices, and <br />
+          crypto markets
+        </h1>
+        <p>
+          Trading conditions can make or break a strategy, that's why you need
+          the best.
+        </p>
+      </div>
+      <div class="features-content">
+        <div class="features-col">
+          <div>
+            <span class="spec">withdrawals</span>
+            <h2>Insatnt withdrawals</h2>
+            <p>Funds sent within seconds with seamless transactions.¹</p>
+          </div>
+          <div>
+            <span class="spec">Spreads</span>
+            <h2>Unmatched spreads</h2>
+            <p>
+              Trade with spreads that remain tight and stable, even <br />during
+              market news.
+            </p>
+          </div>
+          <div>
+            <span class="spec">Support</span>
+            <h2>24/7 live support</h2>
+            <p>
+              Get answers in minutes via phone, live chat or email, in <br />
+              14 languages.
+            </p>
+          </div>
+        </div>
+        <div class="features-img">
+          <img src="exness background.jpg" alt="" />
+        </div>
+        <div class="features-col">
+          <div>
+            <span class="spec">Swaps</span>
+            <h2>Swap-free trading</h2>
+            <p>
+              Hold overnight positions for free on most popular <br />assets.
+              T&Cs apply.
+            </p>
+          </div>
+          <div>
+            <span class="spec">Execution speed</span>
+            <h2>More speed, less slippage</h2>
+            <p>Trade with the most precise execution² in the market.</p>
+          </div>
+          <div>
+            <span class="spec">Account security</span>
+            <h2>Best-in-class security</h2>
+            <p>
+              Trade knowing your funds are kept safe in separate <br />client
+              accounts, with ironclad data protection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="instruments">
+      <div class="opp">
+        <div class="left">
+          <img src="xl_exness_trading_apps_eaab53405d.jpg" alt="" />
+        </div>
+        <div class="right">
+          <img src="exness_opportunity_c200c48704.svg" alt="" />
+          <h1>Seize every opportunity</h1>
+          <p>Trade online anytime, anywhere. On web, mobile and desktop.</p>
+          <div class="opp-links">
+            <a href="">MetaTRader 5 ></a>
+            <a href="">Exness Terminal ></a>
+            <a href="">Exness Trade app ></a>
+          </div>
+        </div>
+      </div>
+      <div class="opp">
+        <div class="right">
+          <img src="exness_security_26f7785c26.svg" alt="" />
+          <h1>Your security is our priority</h1>
+          <p>
+            From secure payments to negative balance protection, you are covered
+            <br />from every angle.
+          </p>
+          <div class="opp-links">
+            <a href="">Client protection ></a>
+            <a href="">Why Exness ></a>
+          </div>
+        </div>
+        <div class="left">
+          <img src="xl_exness_protection_3_4b0834613f.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--     cta section -->
+
+    <section class="cta-1">
+      <div class="cta-1-content">
+        <h1>Exness Born to Trade <br />podcast</h1>
+        <p>
+          Hear from the pros on mastering emotions, building discipline, and
+          <br />
+          staying focused. Catch the full series—plus a bonus episode with Kojo
+          Forex.
+        </p>
+        <a href="" class="btn-yellow">Explore the episodes</a>
+      </div>
+    </section>
+    <div class="section-title">
+      <h1>Keep up with Exness</h1>
+      <p>
+        Stay on top of our news, product and technology updates, events, <br />
+        partnerships, and more.
+      </p>
+      <a href="">Read more articles ></a>
+    </div>
+    <section class="article">
+      <div class="article-box">
+        <img src="user-1.jpg" />
+        <div class="article-text">
+          <span>Inside Exness</span>
+          <h2>Introducing Exness Team Pro's voice in LATAM</h2>
+        </div>
+      </div>
+      <div class="article-box">
+        <img src="xxl_Exness_Connect_2025_e8f958f2bf.webp" />
+        <div class="article-text">
+          <span>Inside Exness</span>
+          <h2>
+            Exness Connect 2025: Building real connections for real affiliate
+            growth
+          </h2>
+        </div>
+      </div>
+      <div class="article-box">
+        <img src="user 3.jpg" />
+        <div class="article-text">
+          <span>Community</span>
+          <h2>
+            An easy guide to unlocking extra income with the Exness Affiliate
+            Program
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="cta-2">
+      <img src="xxl_home_cta_banner_7bb7b120e2.jpg" alt="" />
+      <div class="cta-layer">
+        <div class="cta-text">
+          <h1>Trade with a trusted broker today</h1>
+          <p>
+            See for yourself why Exness is the broker of choice for over 1
+            million traders and 100,000 partners.
+          </p>
+        </div>
+        <div class="cta-btn">
+          <a href="" class="btn-yellow">Register</a>
+          <a href="" class="grey-btn">Try free demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+      <div class="footer-1">
+        <p>
+          1 Exness, over 98% of withdrawals are processed automatically.
+          "Fastest withdrawals" refers to a comparison of Exness’ withdrawal
+          processing time vs. 3 other brokers, last updated on 07.05.2025.
+          Processing times may vary depending on the chosen payment method
+          <br />
+
+          2 "Most precise" refers to Exness's less than 1% slippage rate noted
+          in data collected between 2024-09-06 to 2024-09-12 and 2025-01-24 to
+          2025-01-29, for Gold Spot, on Exness Standard account vs similar
+          accounts in 3 other brokers. <br />
+          3 Spreads may fluctuate and widen due to factors including market
+          volatility, news releases, economic events, when markets open or
+          close, and the type of instruments being traded.
+        </p>
+      </div>
+      <div class="footer-2">
+        <img src="exnesslogo.svg" alt="logo" />
+        <div class="footer-2-items">
+          <div class="footer-2-col">
+            <h3>Acoounts</h3>
+            <div class="footer-2-a">
+              <a href="">Standard accounts</a>
+              <a href="">Professional <br />accounts</a>
+              <a href="">Demo trading <br />accounts</a>
+              <a href="">Social Trading <br />accounts</a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Conditions</h3>
+            <div class="footer-2-a">
+              <a href=""
+                >Deposits and <br />
+                withdrawals</a
+              >
+              <a href="">Fees</a>
+              <a href="">Client protection</a>
+              <a href="">Order execution</a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Markets</h3>
+            <div class="footer-2-a">
+              <a href="">Forex CFD </a>
+              <a href="">Stocks CFD</a>
+              <a href="">indices CFD</a>
+              <a href="">Crypto CFD</a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Platforms</h3>
+            <div class="footer-2-a">
+              <a href="">MetaTRader 5</a>
+              <a href="">MetaTRader 4</a>
+              <a href="">Exness Trading app</a>
+              <a href="">MetaTRader 5 mobile</a>
+              <a href="">MetaTRader 4 mobile</a>
+              <a href="">Exness Terminal</a>
+              <a href="">MetaTRader <br />WebTerminal</a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Resources</h3>
+            <div class="footer-2-a">
+              <a href="">Analytic tools </a>
+              <a href="">Economic calender</a>
+              <a href="">Trading calculator </a>
+              <a href="">Currency Converter </a>
+              <a href="">Tick history </a>
+              <a href=""> VPS hosting </a>
+              <a href=""> Born to Trade <br />Podcast</a>
+              <a href=""> Exness insight</a>
+              <a href=""> </a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>About</h3>
+            <div class="footer-2-a">
+              <a href=""></a>
+              <a href="">About us</a>
+              <a href="">why Exness</a>
+              <a href="">Exness reviews </a>
+              <a href="">Conatct Us</a>
+              <a href="">Help Center </a>
+              <a href="">Exness in the media </a>
+              <a href="">Exness in <br />Community </a>
+              <a href="">Exness Team Pro Blog </a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Corporate</h3>
+            <div class="footer-2-a">
+              <a href="">Regulation</a>
+              <a href="">Legal documents</a>
+              <a href="">Compenstaion fund </a>
+            </div>
+          </div>
+          <div class="footer-2-col">
+            <h3>Solution</h3>
+            <div class="footer-2-a">
+              <a href="">Premier Program</a>
+              <a href="">Social Tradng </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-3">
+        <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-4">
+        <p>
+          E​xness (SC) Ltd ​is a Securities Dealer registered in Seychelles with
+          registration number 8423606-1 and authorised by the Financial Services
+          Authority (FSA) with licence number SD025. E​xness (SC) Ltd is also
+          authorized as an Over-The-Counter Derivatives Provider (ODP) by the
+          Financial Sector Conduct Authority (FSCA) in South Africa. The
+          registered office of E​xness (SC) Ltd is at 9A CT House, 2nd floor,
+          Providence, Mahe, Seychelles.
+        </p>
+        <p>
+          Exness B.V. is a Securities Intermediary registered in Curaçao with
+          registration number 148698(0) and authorised by the Central Bank of
+          Curaçao and Sint Maarten (CBCS) with licence number 0003LSI. The
+          registered office of Exness B.V. is at Emancipatie Boulevard Dominico
+          F. “Don” Martina 31, Curaçao.
+        </p>
+        <p>
+          Exness (VG) Ltd is authorised by the Financial Services Commission
+          (FSC) in BVI with registration number 2032226 and investment business
+          licence number SIBA/L/20/1133. The registered office of Exness (VG)
+          Ltd is at Trinity Chambers, P.O. Box 4301, Road Town, Tortola, BVI.
+        </p>
+        <p>
+          The entities above are duly authorized to operate under the Exness
+          brand and trademarks.
+        </p>
+        <p>
+          Risk Warning: Our services relate to complex derivative products which
+          are traded outside an exchange. These products come with a high risk
+          of losing money rapidly due to leverage and thus are not appropriate
+          for all investors. Under no circumstances shall Exness have any
+          liability to any person or entity for any loss or damage in whole or
+          part caused by, resulting from, or relating to any investing activity.
+          <a href="">learn More</a>
+        </p>
+        <p>
+          The entities above do not offer services to residents of certain
+          jurisdictions including the USA, Canada, Iran, North Korea, Europe,
+          the United Kingdom, Russia, Belarus and others.
+        </p>
+        <p>
+          The information on this website does not constitute investment advice
+          or a recommendation or a solicitation to engage in any investment
+          activity.
+        </p>
+        <p>
+          Any interaction with this website constitutes an individual and
+          voluntary operation on the part of the person accessing it. This
+          website and its content should not be understood as an invitation for
+          the contracting and/or acquisition of Exness' financial services and
+          products.
+        </p>
+        <p>
+          The information on this website may only be copied with the express
+          written permission of Exness.
+        </p>
+        <p>
+          Exness complies with the Payment Card Industry Data Security Standard
+          (PCI DSS) to ensure your security and privacy. We conduct regular
+          vulnerability scans and penetration tests in accordance with the PCI
+          DSS requirements for our business model.
+        </p>
+      </div>
+      <div class="footer-5">
+        <div class="left">
+          <a href="">Risk Diskclosure</a>
+          <a href="">Preventing Money Laundering</a>
+          <a href="">Privacy Policy</a>
+          <a href="">PAIA Manual</a>
+        </div>
+        <div class="right">
+          <span>© 2025 Exness</span>
+        </div>
+      </div>
+      <img src="PCI_DSS_color_c67b80c90d.svg" alt="" />
+    </footer>
+    <script>
+      function showMenu(){
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("show").style.display = "none";
+        document.getElementById("close").style.display = "block";
+      }
+      function hideMenu(){
+        document.getElementById("nav").style.left = "-2000px";
+        document.getElementById("show").style.display = "block";
+        document.getElementById("close").style.display = "none";
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/4864589be7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
